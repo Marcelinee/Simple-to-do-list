@@ -1,0 +1,108 @@
+$body: #1b232c;
+$header: #658a1b;
+$button: #658a1b;
+$off-white: rgb(214, 214, 214);
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+    background-color: $body;
+}
+.container {
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    background-color: $header;
+    color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+.header__title {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.header__sub {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 5px;
+}
+
+.button__add {
+    background: $button;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.button--link {
+    background:none;
+    border: none;
+    color: $off-white;
+    padding: 0;
+}
+
+.options {
+    background: lighten($body, 15%);
+    color: $off-white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.options_h3 {
+    margin: 0;
+}
+
+.options__background {
+    background: lighten($body, 20%);
+}
+
+.options__p {
+    text-align: center;
+    border-bottom: 0.2rem solid lighten($body, 30%);
+    padding: 20px;
+    margin: 0;
+    color: $off-white;
+}
+
+.options__below {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 0.2rem solid lighten($body, 30%);
+
+}
+
+.options__text {
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.add__error {
+    color: $off-white;
+    font-style: italic;
+    margin: 10px 0 0 0;
+    padding: 0 15px;
+}
+
+.add__option {
+    display: flex;
+    padding: 15px;
+
+}
+
+.add-option__input {
+    flex-grow: 1;
+    background: lighten($body, 15%);
+    color: white;
+    border:none;
+    border-bottom: .3rem solid lighten($body, 10%);
+    margin-right: 10px;
+    padding: 10px;
+}
