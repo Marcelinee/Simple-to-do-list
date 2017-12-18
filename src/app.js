@@ -70,7 +70,7 @@ class ToDoApp extends React.Component {
     }
 
     render() {
-        const title = 'To-do list'
+        const title = 'ToDo list'
 
         const options = []
         return (
