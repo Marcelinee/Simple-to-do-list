@@ -65,7 +65,8 @@ class ToDoApp extends React.Component {
             return {
                 options: prevState.options.concat([option])
             }
-        }, function() {updateTasksDatabase("tasks", this.state.options)}
+        }, function() {updateTasksDatabase("tasks", this.state.options);
+            document.getElementById("addText").value = ""}
         )
     }
 
@@ -165,7 +166,7 @@ class Add extends React.Component {
             <div>
             {this.state.error && <p className="add__error">{this.state.error}</p>}
                 <form className="add__option" onSubmit={this.handleAddOption}>
-                    <input className="add-option__input" type='text' name="option"></input>
+                    <input id="addText" className="add-option__input" type='text' name="option"></input>
                     <button className="button__add">Add Option</button>
                 </form>
             </div>
